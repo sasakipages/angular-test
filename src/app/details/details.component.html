@@ -1,0 +1,13 @@
+<h2>{{btnSuccess}}</h2>
+<ul *ngIf="item">
+  <li>ISBNコード：{{item.isbn}}</li>
+  <li>書名：{{item.title}}</li>
+  <li>価格：{{item.price | number}}円</li>
+  <li>出版社：{{item.publisher}}</li>
+</ul>
+<ng-container *ngIf="sampleSample">
+  <div>{{btnSuccess}}</div>
+</ng-container>
+<ng-container *ngIf="okGotit">
+  <h1 [class.fontRed]='fontRed'>わかった！</h1>
+</ng-container>

@@ -1,0 +1,17 @@
+<div>
+  <h1>*ngFor="let parts of inventory"</h1>
+  <ul *ngFor="let parts of inventory">
+    <li><a href="#" (click)="onclick(parts)">
+      {{parts.title}}
+    </a></li>
+  </ul>
+</div>
+<hr />
+<detail-book 
+  [item]="selectedIndex"
+  [sampleSample]='true'
+  [okGotit]='true'
+  [fontRed]="true"
+  [btnSuccess]="'タイトル'"
+></detail-book>
+<!--<detail-book [data]="selected"></detail-book>-->
